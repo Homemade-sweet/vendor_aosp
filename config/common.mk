@@ -2,7 +2,8 @@
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
 # Google Apps
-$(call inherit-product, vendor/gms/products/gms.mk)
+$(call inherit-product-if-exists, vendor/google/gms/config.mk)
+$(call inherit-product-if-exists, vendor/google/pixel/config.mk)
 
 PRODUCT_BRAND ?= PixelOS
 
