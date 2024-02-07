@@ -1,19 +1,9 @@
 # Inherit common mobile stuff
 $(call inherit-product, vendor/aosp/config/common.mk)
 
-ifeq ($(PRODUCT_TYPE), go)
-PRODUCT_PACKAGES += \
-    Launcher3Go
-
+# Launcher3
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Launcher3Go
-else
-PRODUCT_PACKAGES += \
-    Launcher3
-
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Launcher3
-endif
+    Launcher3QuickStep
 
 # Customizations
 PRODUCT_PACKAGES += \

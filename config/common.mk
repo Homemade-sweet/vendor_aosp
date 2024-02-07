@@ -228,7 +228,7 @@ PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay \
     DocumentsUIOverlay \
     NetworkStackOverlay \
-    PixelLauncherOverlay \
+    Launcher3Overlay \
     NavigationBarNoHintOverlay
 
 # TextClassifier
